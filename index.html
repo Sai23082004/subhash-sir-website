@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master English With Subhash | Professional Language Training</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0056b3;      /* British Council deep blue */
+            --primary-light: #0075c9; /* British Council medium blue */
+            --secondary: #ff8a00;     /* British Council orange */
+            --accent: #00b28b;        /* British Council green */
+            --dark: #003c71;          /* British Council dark blue */
+            --light: #f5f7fa;         /* Light background */
+            --text: #333;
+            --text-light: #666;
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f0f2f5 0%, #e2e8f0 100%);
+            min-height: 100vh;
+            color: var(--text);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 100vw;
+            min-height: 100vh;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+        }
+        
+        /* Header Styles */
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: gradientShift 12s ease infinite;
+            background-size: 300% 300%;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4 paraf-4s1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.06' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            position: relative;
+            z-index: 2;
+            transform: translateY(0);
+            transition: var(--transition);
+        }
+        
+        .logo:hover {
+            transform: translateY(-5px);
+        }
+        
+        .logo-icon {
+            font-size: 2.8rem;
+            color: white;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo-subtext {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            margin-top: 8px;
+            color: rgba(255, 255, 255, 0.85);
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background: white;
+            border-bottom: 1px solid #eaeaea;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            position: relative;
+            flex-shrink: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .nav-link {
+            flex: 1;
+            text-align: center;
+            padding: 20px 10px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nav-link:hover {
+            background: rgba(0, 86, 179, 0.05);
+            color: var(--primary);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 4px;
+            background: var(--secondary);
+            transition: var(--transition);
+            border-radius: 4px;
+        }
+        
+        .nav-link:hover::after {
+            width: 80%;
+        }
+        
+        .nav-link.active {
+            color: var(--primary);
+            background: rgba(0, 86, 179, 0.05);
+        }
+        
+        .nav-link.active::after {
+            width: 80%;
+            background: var(--secondary);
+        }
+        
+        .nav-icon {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+        
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--dark);
+            padding: 15px;
+            cursor: pointer;
+            z-index: 101;
+        }
+        
+        /* Content Styles */
+        .content {
+            padding: 60px 20px;
+            text-align: center;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+        
+        .welcome-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            color: var(--dark);
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 1s ease;
+        }
+        
+        .welcome-subtitle {
+            font-size: 1.4rem;
+            color: var(--primary-light);
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+            animation: fadeIn 1.2s ease;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px 30px;
+            width: 300px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: var(--transition);
+            border: 1px solid rgba(0, 86, 179, 0.1);
+            transform: translateY(0);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease forwards;
+            animation-delay: calc(var(--i) * 0.2s);
+            opacity: 0;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--accent), var(--secondary));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .feature-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            transition: var(--transition);
+        }
+        
+        .feature-card:nth-child(1) .feature-icon {
+            color: var(--primary);
+        }
+        
+        .feature-card:nth-child(2) .feature-icon {
+            color: var(--accent);
+        }
+        
+        .feature-card:nth-child(3) .feature-icon {
+            color: var(--secondary);
+        }
+        
+        .feature-card:hover .feature-icon {
+            transform: scale(1.2) rotate(5deg);
+        }
+        
+        .feature-title {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+            font-weight: 700;
+        }
+        
+        .feature-text {
+            color: var(--text-light);
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        
+        /* New Section Styles */
+        .practice-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 60px 40px;
+            max-width: 1200px;
+            margin: 60px auto;
+            background: linear-gradient(135deg, rgba(0, 86, 179, 0.03) 0%, rgba(0, 60, 113, 0.03) 100%);
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+            animation: fadeIn 1.5s ease;
+        }
+        
+        .practice-section::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(0, 178, 139, 0.15) 0%, rgba(0, 178, 139, 0) 70%);
+            z-index: 0;
+        }
+        
+        .practice-section::after {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 138, 0, 0.15) 0%, rgba(255, 138, 0, 0) 70%);
+            z-index: 0;
+        }
+        
+        .practice-text {
+            flex: 1;
+            text-align: left;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .practice-text h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        
+        .practice-text p {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            line-height: 1.8;
+            max-width: 500px;
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            box-shadow: 0 8px 20px rgba(0, 86, 179, 0.3);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 86, 179, 0.4);
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+        }
+        
+        .cta-button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
+        }
+        
+        .cta-button:hover::after {
+            transform: translateX(100%);
+        }
+        
+        .practice-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .practice-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border: 5px solid white;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: var(--dark);
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 4px;
+        }
+        
+        .testimonial-container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            width: 350px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            position: relative;
+            text-align: left;
+            transform: translateY(0);
+            transition: var(--transition);
+            border-top: 4px solid var(--accent);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .author-info h4 {
+            color: var(--dark);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            color: var(--primary-light);
+            font-size: 0.9rem;
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            padding: 80px 20px;
+            text-align: center;
+            margin: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .stat-item {
+            color: white;
+            min-width: 200px;
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .stat-text {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .stats-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.08' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        /* Footer Styles */
+        .footer {
+            background: linear-gradient(135deg, var(--dark) 0%, #001a36 100%);
+            color: white;
+            padding: 80px 20px 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background: linear-gradient(90deg, var(--primary), var(--accent), var(--secondary));
+        }
+        
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 40px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .footer-logo-icon {
+            font-size: 2.5rem;
+            color: white;
+        }
+        
+        .footer-logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        .footer-title {
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 3px;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.85);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+            transform: translateX(5px);
+        }
+        
+        .footer-links i {
+            width: 20px;
+            text-align: center;
+            color: var(--secondary);
+        }
+        
+        .contact-info {
+            list-style: none;
+        }
+        
+        .contact-info li {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+        
+        .contact-info i {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-top: 4px;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+        
+        .social-icon:hover {
+            background: var(--primary-light);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .footer-bg-shape {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            opacity: 0.05;
+            font-size: 15rem;
+            color: white;
+            z-index: 1;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInUp {
+            from { 
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInDown {
+            from { 
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 992px) {
+            .practice-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .practice-text {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .practice-text p {
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            
+            .nav-container {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                max-width: none;
+                background: white;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-container.active {
+                display: flex;
+            }
+            
+            .nav-link {
+                flex: none;
+                padding: 18px;
+                font-size: 1rem;
+                border-bottom: 1px solid #eaeaea;
+            }
+            
+            .logo-text {
+                font-size: 2rem;
+            }
+            
+            .logo-subtext {
+                font-size: 1rem;
+            }
+            
+            .welcome-title {
+                font-size: 2.4rem;
+            }
+            
+            .welcome-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .content {
+                padding: 40px 15px;
+            }
+            
+            .feature-card {
+                width: 100%;
+                max-width: 350px;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .logo-text {
+                font-size: 1.8rem;
+            }
+            
+            .logo-subtext {
+                font-size: 0.9rem;
+            }
+            
+            .welcome-title {
+                font-size: 2rem;
+            }
+            
+            .practice-text h2 {
+                font-size: 1.8rem;
+            }
+            
+            .practice-text p {
+                font-size: 1rem;
+            }
+            
+            .cta-button {
+                padding: 14px 30px;
+                font-size: 1rem;
+            }
+            
+            .footer-title {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-graduation-cap logo-icon"></i>
+                <div class="logo-text">
+                    MASTER ENGLISH WITH SUBHASH
+                    <span class="logo-subtext">Language Excellence</span>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-container">
+                <a href="./index.html" class="nav-link active">
+                    <i class="fas fa-home nav-icon"></i> Home
+                </a>
+                <a href="./resources.html" class="nav-link">
+                    <i class="fas fa-book nav-icon"></i> Resources
+                </a>
+                <a href="./verbal-ability.html" class="nav-link">
+                    <i class="fas fa-comments nav-icon"></i> Verbal Ability
+                </a>
+                <a href="./non-verbal-ability.html" class="nav-link">
+                    <i class="fas fa-chart-bar nav-icon"></i> Non Verbal Ability
+                </a>
+                <a href="./about.html" class="nav-link">
+                    <i class="fas fa-info-circle nav-icon"></i> About
+                </a>
+                <a href="./contact.html" class="nav-link">
+                    <i class="fas fa-envelope nav-icon"></i> Contact
+                </a>
+            </div>
+        </nav>
+        
+        <div class="content">
+            <h1 class="welcome-title">Transform Your English Skills</h1>
+            <p class="welcome-subtitle">Join thousands of learners who have achieved fluency with Subhash's proven methodology. Our comprehensive resources are designed for all proficiency levels.</p>
+            
+            <div class="features">
+                <div class="feature-card" style="--i:1">
+                    <i class="fas fa-microphone-alt feature-icon"></i>
+                    <h3 class="feature-title">Speaking Practice</h3>
+                    <p class="feature-text">Improve pronunciation and fluency with interactive speaking exercises and real-time feedback from our AI system.</p>
+                </div>
+                
+                <div class="feature-card" style="--i:2">
+                    <i class="fas fa-book-reader feature-icon"></i>
+                    <h3 class="feature-title">Grammar Lessons</h3>
+                    <p class="feature-text">Comprehensive lessons covering all aspects of English grammar with practical examples and quizzes.</p>
+                </div>
+                
+                <div class="feature-card" style="--i:3">
+                    <i class="fas fa-brain feature-icon"></i>
+                    <h3 class="feature-title">Vocabulary Building</h3>
+                    <p class="feature-text">Expand your word power with daily vocabulary challenges and contextual learning techniques.</p>
+                </div>
+            </div>
+            
+            <section class="practice-section">
+                <div class="practice-text">
+                    <h2>Professional English Training</h2>
+                    <p>Unlock your full potential with personalized English learning tailored to your needs. Subhash's proven methods help you master speaking, writing, and comprehension with confidence.</p>
+                    <a href="#" class="cta-button">Start Your Journey</a>
+                </div>
+                <div class="practice-image">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427ffbadb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Man practicing English">
+                </div>
+            </section>
+            
+            <div class="stats-section">
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-text">Success Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-text">Students Trained</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-text">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4.9/5</div>
+                        альтернативный текст">Student Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials">
+                <h2 class="section-title">Student Success Stories</h2>
+                <div class="testimonial-container">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Subhash's teaching methods transformed my English skills. I went from struggling with basic conversations to confidently presenting in meetings at my multinational company."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">R</div>
+                            <div class="author-info">
+                                <h4>Rajesh Kumar</h4>
+                                <p>Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"The vocabulary building techniques are incredible! I've expanded my word bank by over 2,000 words in just 3 months. My IELTS score improved from 6.5 to 8.0!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">P</div>
+                            <div class="author-info">
+                                <h4>Priya Sharma</h4>
+                                <p>University Student</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"As a business professional, clear communication is crucial. Subhash's specialized business English program helped me negotiate contracts and lead international teams effectively."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div class="author-info">
+                                <h4>Ananya Patel</h4>
+                                <p>Business Executive</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-bg-shape">
+                <i class="fas fa-book-open"></i>
+            </div>
+            
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap footer-logo-icon"></i>
+                        <div class="footer-logo-text">Master English</div>
+                    </div>
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.7; max-width: 300px;">
+                        Transform your English skills with our proven methodology. Join thousands of learners who have achieved fluency with Subhash's expert guidance.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="./index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="./courses.html"><i class="fas fa-chevron-right"></i> Courses</a></li>
+                        <li><a href="./resources.html"><i class="fas fa-chevron-right"></i> Resources</a></li>
+                        <li><a href="./verbal-ability.html"><i class="fas fa-chevron-right"></i> Speaking Practice</a></li>
+                        <li><a href="./non-verbal-ability.html"><i class="fas fa-chevron-right"></i> Grammar Lessons</a></li>
+                        <li><a href="./about.html"><i class="fas fa-chevron-right"></i> Vocabulary Builder</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Education Street, Learning City, LC 56789</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@masterenglish.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 9:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p style="color: rgba(255,255,255,0.8); margin-bottom: 20px; line-height: 1.7;">
+                        Subscribe to our newsletter for English learning tips, resources, and special offers.
+                    </p>
+                    <form style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <input type="email" placeholder="Your Email Address" style="flex: 1; min-width: 200px; padding: 14px 20px; border: none; border-radius: 50px; background: rgba(255,255,255,0.15); color: white; font-size: 1rem;">
+                        <button type="submit" style="background: var(--accent); color: white; border: none; padding: 14px 30px; border-radius: 50px; font-weight: 600; cursor: pointer; transition: var(--transition);">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                © 2023 Master English With Subhash. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: var(--secondary);"></i> for English Learners
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        // Hamburger menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            const navContainer = document.querySelector('.nav-container');
+            navContainer.classList.toggle('active');
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        });
+        
+        // Add active class to clicked nav item and navigate
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Only prevent default if href is '#'
+                if (this.getAttribute('href') === '#') {
+                    e.preventDefault();
+                }
+                
+                // Update active class
+                document.querySelectorAll('.nav-link').forEach(item => {
+                    item.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Close mobile menu after clicking a link
+                if (window.innerWidth <= 768) {
+                    document.querySelector('.nav-container').classList.remove('active');
+                    document.querySelector('.hamburger i').classList.replace('fa-times', 'fa-bars');
+                }
+                
+                // Navigate to valid href
+                const href = this.getAttribute('href');
+                if (href && href !== '#') {
+                    window.location.href = href;
+                }
+            });
+        });
+        
+        // Newsletter form submission
+        document.querySelectorAll('form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const emailInput = this.querySelector('input[type="email"]');
+                if(emailInput.value && emailInput.value.includes('@')) {
+                    // Show success animation
+                    emailInput.style.backgroundColor = 'rgba(0, 178, 139, 0.2)';
+                    emailInput.style.border = '2px solid var(--accent)';
+                    setTimeout(() => {
+                        alert('Thank you for subscribing to our newsletter!');
+                        emailInput.value = '';
+                        emailInput.style.backgroundColor = '';
+                        emailInput.style.border = '';
+                    }, 500);
+                } else {
+                    // Show error animation
+                    emailInput.style.backgroundColor = 'rgba(255, 138, 0, 0.2)';
+                    emailInput.style.border = '2px solid var(--secondary)';
+                    setTimeout(() => {
+                        alert('Please enter a valid email address.');
+                        emailInput.style.backgroundColor = '';
+                        emailInput.style.border = '';
+                    }, 500);
+                }
+            });
+        });
+        
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease forwards';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.feature-card, .testimonial-card').forEach(card => {
+            observer.observe(card);
+        });
+        
+        // Add CSS animation keyframes
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+            
+            @keyframes fadeInUp {
+                from { 
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to { 
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            @keyframes fadeInDown {
+                from { 
+                    opacity: 0;
+                    transform: translateY(-30px);
+                }
+                to { 
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

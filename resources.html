@@ -68,7 +68,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.06' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-6-7-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.06' fill-rule='evenodd'/%3E%3C/svg%3E");
             opacity: 0.3;
         }
         
@@ -95,7 +95,7 @@
         
         @keyframes pulse {
             0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+            to { transform: scale(1.1); }
             100% { transform: scale(1); }
         }
         
@@ -301,7 +301,7 @@
             background: white;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 8px 25px rgba(0, 0,0, 0.08);
             transition: var(--transition);
             border: 1px solid rgba(0, 86, 179, 0.1);
             position: relative;
@@ -312,7 +312,7 @@
         
         .resume-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
         }
         
         .resume-thumbnail {
@@ -360,7 +360,7 @@
             align-items: center;
             gap: 10px;
             transition: var(--transition);
-        }
+            }
         
         .preview-btn:hover {
             background: var(--secondary);
@@ -413,7 +413,7 @@
             margin: 60px 0;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
         }
         
         .resources-grid {
@@ -428,14 +428,14 @@
             background: white;
             border-radius: 12px;
             padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             transition: var(--transition);
             border-left: 4px solid var(--accent);
         }
         
         .resource-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.1);
         }
         
         .resource-icon {
@@ -691,14 +691,14 @@
             }
             
             .nav-container.active {
-                display: flex;
+ display: flex;
             }
             
             .nav-link {
                 flex: none;
                 padding: 18px;
                 font-size: 1rem;
-                border-bottom: 1px solid #eaeaea;
+                border-bottom: 1px solid #e3e1ea;
             }
             
             .logo-text {
@@ -818,7 +818,7 @@
                         <div class="resume-thumbnail">
                             <i class="fas fa-file-alt resume-icon"></i>
                             <div class="resume-preview">
-                                <a href="./re.pdf" class="preview-btn" target="_blank">
+                                <a href="./Modern_Professional_Resume.pdf" class="preview-btn" target="_blank">
                                     <i class="fas fa-eye"></i> Preview
                                 </a>
                             </div>
@@ -826,7 +826,7 @@
                         <div class="resume-info">
                             <h3 class="resume-title">Modern Professional</h3>
                             <p class="resume-description">Clean and contemporary design perfect for corporate positions and experienced professionals.</p>
-                            <a href="./re.pdf" class="download-btn" download="Modern_Professional_Resume.pdf">
+                            <a href="./Modern_Professional_Resume.pdf" class="download-btn" download="Modern_Professional_Resume.pdf">
                                 <i class="fas fa-download"></i> Download PDF
                             </a>
                         </div>
@@ -837,7 +837,7 @@
                         <div class="resume-thumbnail">
                             <i class="fas fa-briefcase resume-icon"></i>
                             <div class="resume-preview">
-                                <a href="./re.pdf" class="preview-btn" target="_blank">
+                                <a href="./Creative_Designer_Resume.pdf" class="preview-btn" target="_blank">
                                     <i class="fas fa-eye"></i> Preview
                                 </a>
                             </div>
@@ -845,7 +845,7 @@
                         <div class="resume-info">
                             <h3 class="resume-title">Creative Designer</h3>
                             <p class="resume-description">Visually appealing layout ideal for designers, artists, and creative professionals.</p>
-                            <a href="./re.pdf" class="download-btn" download="Creative_Designer_Resume.pdf">
+                            <a href="./Creative_Designer_Resume.pdf" class="download-btn" download="Creative_Designer_Resume.pdf">
                                 <i class="fas fa-download"></i> Download PDF
                             </a>
                         </div>
@@ -856,7 +856,7 @@
                         <div class="resume-thumbnail">
                             <i class="fas fa-laptop-code resume-icon"></i>
                             <div class="resume-preview">
-                                <a href="./re.pdf" class="preview-btn" target="_blank">
+                                <a href="./IT_Specialist_Resume.pdf" class="preview-btn" target="_blank">
                                     <i class="fas fa-eye"></i> Preview
                                 </a>
                             </div>
@@ -864,7 +864,7 @@
                         <div class="resume-info">
                             <h3 class="resume-title">IT Specialist</h3>
                             <p class="resume-description">Structured format highlighting technical skills and certifications for IT professionals.</p>
-                            <a href="./re.pdf" class="download-btn" download="IT_Specialist_Resume.pdf">
+                            <a href="./IT_Specialist_Resume.pdf" class="download-btn" download="IT_Specialist_Resume.pdf">
                                 <i class="fas fa-download"></i> Download PDF
                             </a>
                         </div>
@@ -875,7 +875,7 @@
                         <div class="resume-thumbnail">
                             <i class="fas fa-graduation-cap resume-icon"></i>
                             <div class="resume-preview">
-                                <a href="./re.pdf" class="preview-btn" target="_blank">
+                                <a href="./Academic_CV.pdf" class="preview-btn" target="_blank">
                                     <i class="fas fa-eye"></i> Preview
                                 </a>
                             </div>
@@ -883,7 +883,7 @@
                         <div class="resume-info">
                             <h3 class="resume-title">Academic CV</h3>
                             <p class="resume-description">Comprehensive format for academic positions, research roles, and graduate school applications.</p>
-                            <a href="./re.pdf" class="download-btn" download="Academic_CV.pdf">
+                            <a href="./Academic_CV.pdf" class="download-btn" download="Academic_CV.pdf">
                                 <i class="fas fa-download"></i> Download PDF
                             </a>
                         </div>
@@ -894,7 +894,7 @@
                         <div class="resume-thumbnail">
                             <i class="fas fa-chart-line resume-icon"></i>
                             <div class="resume-preview">
-                                <a href="./re.pdf" class="preview-btn" target="_blank">
+                                <a href="./Executive_Leadership_Resume.pdf" class="preview-btn" target="_blank">
                                     <i class="fas fa-eye"></i> Preview
                                 </a>
                             </div>
@@ -902,7 +902,7 @@
                         <div class="resume-info">
                             <h3 class="resume-title">Executive Leadership</h3>
                             <p class="resume-description">Sophisticated template for senior executives highlighting leadership and achievements.</p>
-                            <a href="./re.pdf" class="download-btn" download="Executive_Leadership_Resume.pdf">
+                            <a href="./Executive_Leadership_Resume.pdf" class="download-btn" download="Executive_Leadership_Resume">
                                 <i class="fas fa-download"></i> Download PDF
                             </a>
                         </div>
@@ -959,8 +959,7 @@
                         <div class="footer-logo-text">Master English</div>
                     </div>
                     <p style="color: rgba(255,255,255,0.8); line-height: 1.7; max-width: 300px;">
-                        Transform your English skills with our proven methodology. Join thousands of learners who have achieved fluency with Subhash's expert guidance.
-                    </p>
+                        Transform your English skills with our proven methodology. Join thousands of learners who have achieved fluency with Subhash's expert guidance.</p>
                     <div class="social-icons">
                         <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
@@ -973,12 +972,12 @@
                 <div class="footer-column">
                     <h3 class="footer-title">Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="./index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="./resources.html"><i class="fas fa-chevron-right"></i> Resources</a></li>
-                        <li><a href="./verbal-ability.html"><i class="fas fa-chevron-right"></i> Speaking Practice</a></li>
-                        <li><a href="./non-verbal-ability.html"><i class="fas fa-chevron-right"></i> Grammar Lessons</a></li>
-                        <li><a href="./about.html"><i class="fas fa-chevron-right"></i> Vocabulary Builder</a></li>
-                        <li><a href="./contact.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="resources.html"><i class="fas fa-chevron-right"></i> Resources</a></li>
+                        <li><a href="verbal-ability.html"><i class="fas fa-chevron-right"></i> Speaking Practice</a></li>
+                        <li><a href="non-verbal-ability.html"><i class="fas fa-chevron-right"></i> Grammar Lessons</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> Vocabulary Builder</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
                     </ul>
                 </div>
                 
@@ -1007,13 +1006,12 @@
                 <div class="footer-column">
                     <h3 class="footer-title">Newsletter</h3>
                     <p style="color: rgba(255,255,255,0.8); margin-bottom: 20px; line-height: 1.7;">
-                        Subscribe to our newsletter for English learning tips, resources, and special offers.
-                    </p>
+                        Subscribe to our newsletter for English learning tips, resources, and special offers.</p>
                     <form style="display: flex; flex-wrap: wrap; gap: 10px;">
                         <input type="email" placeholder="Your Email Address" style="flex: 1; min-width: 200px; padding: 14px 20px; border: none; border-radius: 50px; background: rgba(255,255,255,0.15); color: white; font-size: 1rem;">
                         <button type="submit" style="background: var(--accent); color: white; border: none; padding: 14px 30px; border-radius: 50px; font-weight: 600; cursor: pointer; transition: var(--transition);">
                             Subscribe
-                        </button>
+                            </button>
                     </form>
                 </div>
             </div>
@@ -1040,24 +1038,20 @@
         // Add active class to clicked nav item and navigate
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', function(e) {
-                // Only prevent default if href is '#'
                 if (this.getAttribute('href') === '#') {
                     e.preventDefault();
                 }
                 
-                // Update active class
                 document.querySelectorAll('.nav-link').forEach(item => {
                     item.classList.remove('active');
                 });
                 this.classList.add('active');
                 
-                // Close mobile menu after clicking a link
                 if (window.innerWidth <= 768) {
                     document.querySelector('.nav-container').classList.remove('active');
                     document.querySelector('.hamburger i').classList.replace('fa-times', 'fa-bars');
                 }
                 
-                // Navigate to valid href
                 const href = this.getAttribute('href');
                 if (href && href !== '#') {
                     window.location.href = href;
@@ -1075,36 +1069,27 @@
             });
         });
         
-        // Resume preview and download functionality
-        document.querySelectorAll('.preview-btn').forEach((btn, index) => {
+        // Resume preview functionality
+        document.querySelectorAll('.preview-btn').forEach(btn => {
             btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                const resumeNames = [
-                    'Modern_Professional_Resume.pdf',
-                    'Creative_Designer_Resume.pdf',
-                    'IT_Specialist_Resume.pdf',
-                    'Academic_CV.pdf',
-                    'Executive_Leadership_Resume.pdf'
-                ];
-                
-                // In a real implementation, this would open the PDF
-                alert(`Opening preview for: ${resumeNames[index]}\n\nIn a real implementation, this would open the PDF in a new tab.`);
+                const href = this.getAttribute('href');
+                if (!href || href === '#') {
+                    e.preventDefault();
+                    alert('PDF file is not available. Please check the file path.');
+                }
+                // Allow default behavior (open PDF in new tab) for valid href
             });
         });
         
-        document.querySelectorAll('.download-btn').forEach((btn, index) => {
+        // Download button functionality
+        document.querySelectorAll('.download-btn').forEach(btn => {
             btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                const resumeNames = [
-                    'Modern_Professional_Resume.pdf',
-                    'Creative_Designer_Resume.pdf',
-                    'IT_Specialist_Resume.pdf',
-                    'Academic_CV.pdf',
-                    'Executive_Leadership_Resume.pdf'
-                ];
-                
-                // In a real implementation, this would download the PDF
-                alert(`Downloading: ${resumeNames[index]}\n\nIn a real implementation, this would download the PDF file.`);
+                const href = this.getAttribute('href');
+                if (!href || href === '#') {
+                    e.preventDefault();
+                    alert('Download failed. Please check the PDF file path.');
+                }
+                // Allow default behavior (download PDF)
             });
         });
         
@@ -1113,7 +1098,7 @@
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
                 const emailInput = this.querySelector('input[type="email"]');
-                if(emailInput.value && emailInput.value.includes('@')) {
+                if (emailInput.value && emailInput.value.includes('@')) {
                     // Show success animation
                     emailInput.style.backgroundColor = 'rgba(0, 178, 139, 0.2)';
                     emailInput.style.border = '2px solid var(--accent)';
@@ -1132,8 +1117,7 @@
                         emailInput.style.backgroundColor = '';
                         emailInput.style.border = '';
                     }, 500);
-                }
-            });
+                });
         });
         
         // Animation on scroll
@@ -1175,7 +1159,7 @@
             
             @keyframes fadeInDown {
                 from { 
-                    opacity: 0;
+                    opacity: opacity0;
                     transform: translateY(-30px);
                 }
                 to { 
@@ -1184,7 +1168,7 @@
                 }
             }
         `;
-        document.head.appendChild(style);
+        document.querySelectorAll('head').appendChild(style);
     </script>
 </body>
 </html>
